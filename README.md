@@ -1,4 +1,10 @@
-# San Antonio Smart Street Light Pilot Program
+![header](./visuals/header.png)
+
+![exec-summary](./visuals/executive_summary.png)
+
+## Background
+
+### San Antonio Smart Street Light Pilot Program
 
 The SmartSA Smart Streetlight program pilots remote lighting controls, and five environmental sensor use-cases on up to 40 streetlights in each of the three Innovation Zones: Downtown, Brooks and the Medical Center for a total of up to 120 streetlights.
 
