@@ -14,3 +14,20 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 - Ambient noise detection
 - Parking availability sensing
 - Flood levels sensing
+
+
+## Data Dictionary
+**noise.csv**
+| Feature Name    | Description                                                                                              | Data Type    |
+| :-------------- | :------------------------------------------------------------------------------------------------------- | :----------- |
+| date            | Date and Time when the value was read by the sensor in local time. ISO6801 Format: YYYY:MM:DD hh:mm:ss   | DateTime     |
+| sensor_id       | Sensor unique identifier.                                                                                | Alphanumeric |
+| vendor          | Vendor that owns the sensor. Vendors are ITRON and ATT.                                                  | Text         |
+| sensor_model    | The manufacturer model number of the sensor.                                                             | Alphanumeric |
+| latitude        | Latitude of sensor.                                                                                      | Numeric      |
+| longitude       | Longitude of sensor.                                                                                     | Numeric      |
+| zone            | The zone where sensor is installed: Brooks, Downtown, Medical Center.                                    | Text         |
+| noise_level     | Noise level in decibels.                                                                                 | Numeric      |
+| alert_triggered | Yes, No, or Not Supported if sensor supports alert levels and alert was triggered.                       | Text         |
+| sensor_status   | Status of the sensor: Normal, Malfunction, Low Battery, etc.                                             | Text         |
+
