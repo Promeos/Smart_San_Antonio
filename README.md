@@ -31,3 +31,23 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 | alert_triggered | Yes, No, or Not Supported if sensor supports alert levels and alert was triggered.                       | Text         |
 | sensor_status   | Status of the sensor: Normal, Malfunction, Low Battery, etc.                                             | Text         |
 
+<br>
+
+| Decibels (dB) | Type of Sound                                         |
+| :------- | :---------------------------------------------------- |
+| 130      | Artillery fire at close proximity                     |
+| 120      | Amplified rock music; near jet engine                 |
+| 110      | Loud orchestral music, in audience                    |
+| 100      | Electric saw                                          |
+| 90       | Bus or truck interior                                 |
+| 80       | Automobile interior                                   |
+| 70       | Average street noise; loud telephone bell             |
+| 60       | Normal conversation; business office                  |
+| 50       | Restaurant; private office                            |
+| 40       | Quiet room in home                                    |
+| 30       | Quiet lecture hall; bedroom                           |
+| 20       | Radio, television, or recording studio                |
+| 10       | Soundproof room                                       |
+| 0        | Absolute silence (threshold of hearing)               |
+
+[source](https://www.britannica.com/science/sound-physics/The-decibel-scale)
