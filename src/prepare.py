@@ -18,7 +18,7 @@ def prep_sensor_data(data):
     data : pandas.core.frame.DataFrame
         Prepared noise sensor data.
     '''
-    filepath = './data/prepared/sensors.csv'
+    filepath = './data/prepared/ambient_noise/sensors.csv'
     
     try:
         data = pd.read_csv(filepath)

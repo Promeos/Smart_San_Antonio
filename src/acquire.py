@@ -24,7 +24,7 @@ def get_zone_data(zone='all'):
         Noise sensors dataset.
     '''
     
-    filepath = f'./data/raw/{zone}.csv'
+    filepath = f'./data/raw/ambient_noise/{zone}.csv'
     
     try:
         if os.path.isfile(filepath):
