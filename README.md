@@ -29,7 +29,7 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 | zone            | The zone where sensor is installed: Brooks, Downtown, Medical Center.                                    | Text         |
 | noise_level     | Noise level in decibels.                                                                                 | Numeric      |
 | alert_triggered | Yes, No, or Not Supported if sensor supports alert levels and alert was triggered.                       | Text         |
-| sensor_status   | Status of the sensor: Normal, Malfunction, Low Battery, etc.                                             | Text         |
+| sensor_status   | Status of the sensor: Normal, Malfunction                                                                | Text         |
 
 <br>
 
@@ -51,3 +51,22 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 | 0        | Absolute silence (threshold of hearing)               |
 
 [source](https://www.britannica.com/science/sound-physics/The-decibel-scale)
+
+**flood.csv**
+| Feature Name    | Description                                                                                              | Data Type    |
+| :-------------- | :------------------------------------------------------------------------------------------------------- | :----------- |
+| date            | Date and Time when the value was read by the sensor in local time. ISO6801 Format: YYYY:MM:DD hh:mm:ss   | DateTime     |
+| sensor_id       | Sensor unique identifier.                                                                                | Alphanumeric |
+| vendor          | Vendor that owns the sensor. Vendors are ITRON and ATT.                                                  | Text         |
+| sensor_model    | The manufacturer model number of the sensor.                                                             | Alphanumeric |
+| latitude        | Latitude of sensor.                                                                                      | Numeric      |
+| longitude       | Longitude of sensor.                                                                                     | Numeric      |
+| zone            | The zone where sensor is installed: Brooks, Downtown, Medical Center.                                    | Text         |
+| temp_c          | Temperature at sensor in degrees Celcius. -999 if sensor does not read temperature.                      | Numeric      |
+| temp_f          | Temperature at sensor in degrees Fahrenheit. -999 if sensor does not read temperature.                   | Numeric      |
+| dist_to_wl_ft   | Distance from sensor to water level in feet. -999 if sensor is not capable of taking measurement.        | Numeric      |
+| dist_to_wl_m    | Distance from sensor to water level in meters. -999 if sensor is not capable of taking measurement       | Numeric      |
+| dist_to_df_ft   | Distance from sensor to dry floor of river, creek in feet. -999 if sensor cannot take measurement.       | Numeric      |
+| dist_to_df_m    | Distance from sensor to dry floor of river, creek in meters. -999 if sensor cannot take measurement.     | Numeric      |
+| alert_triggered | Yes, No, or Not Supported if sensor supports alert levels and alert was triggered.                       | Text         |
+| sensor_status   | Status of the sensor: Normal, Malfunction, Low Battery                                                   | Text         |
