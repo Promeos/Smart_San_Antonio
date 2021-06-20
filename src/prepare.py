@@ -31,7 +31,7 @@ def prep_data(data, filename='air'):
     
     try:
         data = pd.read_csv(filepath)
-    except FileNotFoundError:
+    except:
         data = normalize_common_cols(data)
         
         if filename == 'air':
@@ -40,10 +40,11 @@ def prep_data(data, filename='air'):
             data = prep_noise_data(data)
         elif filename == 'water':
             data = prep_water_data(data)
-        elif data == 'weather':
+        elif filename == 'weather':
             data = prep_weather_data(data)
         else:
             return None
+        
         data.to_csv(filepath, index=False)
     finally:
         return data
@@ -64,6 +65,8 @@ def prep_air_data(data):
                          'co' : 'carbon',
                          'no2': 'nitrogen'},
                 inplace=True)
+    
+    data = update_sensor_coordinates(data)
     return data
 
 
@@ -97,12 +100,12 @@ def prep_weather_data(data):
     '''
     Prepare the weather data for exploration.
     '''
-
+    data.drop(columns=['temp_c', 'dewpoint_c'],
+              inplace=True)
     
+    data = update_sensor_coordinates(data)
     
     return data
-    
-    
     
 
 #################################################################################################################################
