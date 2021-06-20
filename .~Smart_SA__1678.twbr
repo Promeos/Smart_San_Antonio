@@ -1,0 +1,1115 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook source-build='2021.1.0 (20211.21.0320.1853)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sensors' inline='true' name='federated.1r08jrj1f70bbp1gnal281u90qtc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sensors' name='textscan.08i6o6m0o3cnxh11bk3zk1kiti84'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='/Users/christopherortiz/promeos/Smart_San_Antonio/data/prepared/ambient_noise/sensors.csv' dataRefreshTime='' directory='/Users/christopherortiz/promeos/Smart_San_Antonio/data/prepared/ambient_noise' filename='/var/folders/zn/dl7sbzx91d1491_3mzwsn2900000gn/T/tableau-temp/19ycgoy0d0z0o71g0yc2n1554v2p/sensors.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08i6o6m0o3cnxh11bk3zk1kiti84' name='sensors.csv' table='[sensors#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='date' ordinal='0' />
+            <column datatype='string' name='sensor_id' ordinal='1' />
+            <column datatype='string' name='vendor' ordinal='2' />
+            <column datatype='string' name='sensor_model' ordinal='3' />
+            <column datatype='real' name='latitude' ordinal='4' />
+            <column datatype='real' name='longitude' ordinal='5' />
+            <column datatype='string' name='zone' ordinal='6' />
+            <column datatype='integer' name='noise_level' ordinal='7' />
+            <column datatype='string' name='alert_triggered' ordinal='8' />
+            <column datatype='string' name='sensor_status' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08i6o6m0o3cnxh11bk3zk1kiti84' name='sensors.csv' table='[sensors#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='date' ordinal='0' />
+            <column datatype='string' name='sensor_id' ordinal='1' />
+            <column datatype='string' name='vendor' ordinal='2' />
+            <column datatype='string' name='sensor_model' ordinal='3' />
+            <column datatype='real' name='latitude' ordinal='4' />
+            <column datatype='real' name='longitude' ordinal='5' />
+            <column datatype='string' name='zone' ordinal='6' />
+            <column datatype='integer' name='noise_level' ordinal='7' />
+            <column datatype='string' name='alert_triggered' ordinal='8' />
+            <column datatype='string' name='sensor_status' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>39996</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sensor_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sensor_id]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>sensor_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vendor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[vendor]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>vendor</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sensor_model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sensor_model]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>sensor_model</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zone</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[zone]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>zone</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noise_level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noise_level]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>noise_level</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alert_triggered</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[alert_triggered]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>alert_triggered</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sensor_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sensor_status]</local-name>
+            <parent-name>[sensors.csv]</parent-name>
+            <remote-alias>sensor_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='MaxMinDiff' datatype='integer' name='[Calculation_118078808213725188]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([noise_level]) - MIN([noise_level])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='sensors.csv' datatype='table' name='[__tableau_internal_object_id__].[sensors.csv_70F077778E56494897D5F08AEEF7CC9B]' role='measure' type='ordinal' />
+      <column caption='Alert Triggered' datatype='string' name='[alert_triggered]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Noise Level' datatype='integer' name='[noise_level]' role='measure' type='quantitative' />
+      <column caption='Sensor Id' datatype='string' name='[sensor_id]' role='dimension' type='nominal' />
+      <column caption='Sensor Model' datatype='string' name='[sensor_model]' role='dimension' type='nominal' />
+      <column caption='Sensor Status' datatype='string' name='[sensor_status]' role='dimension' type='nominal' />
+      <column caption='Vendor' datatype='string' name='[vendor]' role='dimension' type='nominal' />
+      <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+      <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:zone:nk]' type='palette'>
+            <map to='#b07aa1'>
+              <bucket>&quot;Brooks&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medical Center&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Downtown&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sensors.csv' id='sensors.csv_70F077778E56494897D5F08AEEF7CC9B'>
+            <properties context=''>
+              <relation connection='textscan.08i6o6m0o3cnxh11bk3zk1kiti84' name='sensors.csv' table='[sensors#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:J10001:no:A1:J10001:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='date' ordinal='0' />
+                  <column datatype='string' name='sensor_id' ordinal='1' />
+                  <column datatype='string' name='vendor' ordinal='2' />
+                  <column datatype='string' name='sensor_model' ordinal='3' />
+                  <column datatype='real' name='latitude' ordinal='4' />
+                  <column datatype='real' name='longitude' ordinal='5' />
+                  <column datatype='string' name='zone' ordinal='6' />
+                  <column datatype='integer' name='noise_level' ordinal='7' />
+                  <column datatype='string' name='alert_triggered' ordinal='8' />
+                  <column datatype='string' name='sensor_status' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20210619T221633' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20210619T221633' name='Clipboard_20210619T221633leaf'>
+            <connection class='textscan' directory='/var/folders/zn/dl7sbzx91d1491_3mzwsn2900000gn/T/tableau-temp/1e5ae3l1i2g2gy1h4hdno0i7kowf' filename='Clipboard_20210619T221633.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='Clipboard_20210619T221633leaf' name='Clipboard_20210619T221633#txt' table='[Clipboard_20210619T221633#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='real' name='Latitude' ordinal='0' />
+            <column datatype='real' name='Longitude' ordinal='1' />
+            <column datatype='string' name='Zone' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='Clipboard_20210619T221633leaf' name='Clipboard_20210619T221633#txt' table='[Clipboard_20210619T221633#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='real' name='Latitude' ordinal='0' />
+            <column datatype='real' name='Longitude' ordinal='1' />
+            <column datatype='string' name='Zone' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20210619T221633#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Clipboard_20210619T221633#txt]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20210619T221633]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Clipboard_20210619T221633#txt]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20210619T221633]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Zone]</local-name>
+            <parent-name>[Clipboard_20210619T221633#txt]</parent-name>
+            <remote-alias>Zone</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20210619T221633]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Clipboard_20210619T221633' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20210619T221633]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Clipboard_20210619T221633' id='Clipboard_20210619T221633'>
+            <properties context=''>
+              <relation connection='Clipboard_20210619T221633leaf' name='Clipboard_20210619T221633#txt' table='[Clipboard_20210619T221633#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='real' name='Latitude' ordinal='0' />
+                  <column datatype='real' name='Longitude' ordinal='1' />
+                  <column datatype='string' name='Zone' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_29A4DFB364E740EFA1823A67E0542699]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Daily Average Noise Level' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Brooks'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column caption='MaxMinDiff' datatype='integer' name='[Calculation_118078808213725188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([noise_level]) - MIN([noise_level])' />
+            </column>
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Noise Level' datatype='integer' name='[noise_level]' role='measure' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_118078808213725188]' derivation='User' name='[usr:Calculation_118078808213725188:qk]' pivot='key' type='quantitative' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]'>
+            <groupfilter function='member' level='[none:zone:nk]' member='&quot;Brooks&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1r08jrj1f70bbp1gnal281u90qtc].[tdy:date:qk]' value='57' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[usr:Calculation_118078808213725188:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{BC95D0F8-C52E-4291-A753-C16D085A900E}' />
+    </worksheet>
+    <worksheet name='Daily Average Noise Level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column-instance column='[noise_level]' derivation='Avg' name='[avg:noise_level:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Noise Level' datatype='integer' name='[noise_level]' role='measure' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[avg:noise_level:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{C8397C96-9579-4773-ABBD-F003B9055A69}' />
+    </worksheet>
+    <worksheet name='Downtown'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column caption='MaxMinDiff' datatype='integer' name='[Calculation_118078808213725188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([noise_level]) - MIN([noise_level])' />
+            </column>
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Noise Level' datatype='integer' name='[noise_level]' role='measure' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_118078808213725188]' derivation='User' name='[usr:Calculation_118078808213725188:qk]' pivot='key' type='quantitative' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]'>
+            <groupfilter function='member' level='[none:zone:nk]' member='&quot;Downtown&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[usr:Calculation_118078808213725188:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{30E71A0C-FBA6-4C22-9DD9-F9C30334BDCC}' />
+    </worksheet>
+    <worksheet name='Medical Center'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column caption='MaxMinDiff' datatype='integer' name='[Calculation_118078808213725188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([noise_level]) - MIN([noise_level])' />
+            </column>
+            <column caption='Date' datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Noise Level' datatype='integer' name='[noise_level]' role='measure' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_118078808213725188]' derivation='User' name='[usr:Calculation_118078808213725188:qk]' pivot='key' type='quantitative' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]'>
+            <groupfilter function='member' level='[none:zone:nk]' member='&quot;Medical Center&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[usr:Calculation_118078808213725188:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{860BB1C2-D2BF-44C6-8ABE-A11F0AE2DD60}' />
+    </worksheet>
+    <worksheet name='Nosie Sensor Locations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]' field-type='quantitative' max='-10928644.439641153' min='-11017531.983961843' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]' field-type='quantitative' max='3449385.9201740539' min='3413861.0084289061' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Zone:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='1.5272375345230103' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='has-halo' value='true' />
+                <format attr='halo-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true' fontsize='14'>Downtown</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10962356.995748365'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3435293.7325147679'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.476528392553163' v='29.467576586637083' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10953608.649380593'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3430086.3835047437'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.39794066002375' v='29.426841524247855' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true' fontsize='14'>Brooks</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10956663.627477275'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3424115.2899732497'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.425383995192746' v='29.380111872476693' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10949998.220720878'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3418630.2156826914'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.365507627551295' v='29.337166878945673' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='2' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run bold='true' fontsize='14'>Medical Center</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10971869.08664031'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3447444.2135381568'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.561976958874837' v='29.562561430163957' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10964925.954602394'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3440501.0815247917'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.49960574258165' v='29.508295291858381' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Medical Center</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='-10974025.64495473'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3440386.7295051869'>
+                  <node-reference>
+                    <axis>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='-98.581349651824226' v='29.507401295517319' />
+              </visual-coordinate>
+            </point>
+            <body x='-115' y='-42' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{F3A42E8A-9DB6-4AD4-B134-DC7BFA4DCC9D}' />
+    </worksheet>
+    <worksheet name='Number of Sensors in Each Zone'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sensors' name='federated.1r08jrj1f70bbp1gnal281u90qtc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r08jrj1f70bbp1gnal281u90qtc'>
+            <column-instance column='[sensor_id]' derivation='CountD' name='[ctd:sensor_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[zone]' derivation='None' name='[none:zone:nk]' pivot='key' type='nominal' />
+            <column caption='Sensor Id' datatype='string' name='[sensor_id]' role='dimension' type='nominal' />
+            <column caption='Zone' datatype='string' name='[zone]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Downtown&quot;</bucket>
+              <bucket>&quot;Medical Center&quot;</bucket>
+              <bucket>&quot;Brooks&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#f3ebf3' />
+            <format attr='fill-below' id='refline1' value='#f3ebf3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r08jrj1f70bbp1gnal281u90qtc].[ctd:sensor_id:qk]</rows>
+        <cols>[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]</cols>
+      </table>
+      <simple-id uuid='{EEF0721C-1FDF-4C1A-B465-CE222E1F2266}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='7' param='horz' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='97916' id='5' w='87115' x='586' y='1042'>
+              <zone h='68191' id='3' name='Nosie Sensor Locations' w='87115' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='29725' id='9' name='Daily Average Noise Level' w='87115' x='586' y='69233'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='97916' id='6' is-fixed='true' param='vert' w='11713' x='87701' y='1042'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='11198' id='8' name='Nosie Sensor Locations' pane-specification-id='0' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' w='11713' x='87701' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0DC96AC9-89DF-4375-B1EB-71B3C5B4B3DE}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='51'>
+    <window class='worksheet' name='Nosie Sensor Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+        <default-map-unit-selection mapunit='2' />
+      </viewpoint>
+      <simple-id uuid='{5AF97A66-6DE4-4550-8645-B82C85EDE1BE}' />
+    </window>
+    <window class='worksheet' name='Number of Sensors in Each Zone'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4E38DFCC-908D-4167-B369-D149F4D469F7}' />
+    </window>
+    <window class='worksheet' name='Medical Center'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{892BFF16-EDF3-4FF7-A22B-EF29BC554862}' />
+    </window>
+    <window class='worksheet' name='Downtown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58D8DF2C-3A45-41F1-BB84-202EA535B48E}' />
+    </window>
+    <window class='worksheet' name='Brooks'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD396B07-4E07-4F58-97C7-5554F9ACE7C6}' />
+    </window>
+    <window class='worksheet' name='Daily Average Noise Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r08jrj1f70bbp1gnal281u90qtc].[none:zone:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B193A2B3-C248-445B-9A5F-03F412F32239}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Daily Average Noise Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Nosie Sensor Locations'>
+          <zoom type='entire-view' />
+          <default-map-unit-selection mapunit='2' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <device-preview selected='Desktop' visible='true' />
+      <simple-id uuid='{45028E91-5F75-44BC-8EC9-66F66C2E4C14}' />
+    </window>
+  </windows>
+</workbook>

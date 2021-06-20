@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 
-def get_zone_data(zone='all'):
+def get_zone_data(sensor='ambient_noise', zone='all'):
     '''
     Noise sensor data from a zone(s) in San Antonio.
     
@@ -24,7 +24,7 @@ def get_zone_data(zone='all'):
         Noise sensors dataset.
     '''
     
-    filepath = f'./data/raw/ambient_noise/{zone}.csv'
+    filepath = f'./data/raw/{sensor}/{zone}.csv'
     
     try:
         if os.path.isfile(filepath):

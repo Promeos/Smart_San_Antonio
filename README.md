@@ -33,7 +33,7 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 
 <br>
 
-| Decibels (dB) | Type of Sound                                         |
+| Decibels (dB) | Type of Sound                                    |
 | :------- | :---------------------------------------------------- |
 | 130      | Artillery fire at close proximity                     |
 | 120      | Amplified rock music; near jet engine                 |
