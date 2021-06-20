@@ -56,7 +56,14 @@ def prep_air_data(data):
     '''
     Prepare the air quality sensor data for exploration.
     '''
-
+    data.rename(columns={'pm1_0': 'micron_1',
+                         'pm2_5': 'micron_2',
+                         'pm10': 'micron_10',
+                         'so2': 'sulfur',
+                         'o3': 'ozone',
+                         'co' : 'carbon',
+                         'no2': 'nitrogen'},
+                inplace=True)
     return data
 
 
@@ -90,6 +97,7 @@ def prep_weather_data(data):
     '''
     Prepare the weather data for exploration.
     '''
+
     
     
     return data
@@ -130,6 +138,6 @@ def normalize_common_cols(data):
                 inplace=True)
     
     data['date'] = pd.to_datetime(data['date'], infer_datetime_format=True)
-    data.alert_triggered = np.where(data.alert_triggered == np.NaN, 'Not Supported', 'No')
+    data.alert_triggered = np.where(data.alert_triggered == np.NaN, 'Not Supported', data.alert_triggered)
     
     return data

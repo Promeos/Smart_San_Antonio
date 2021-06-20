@@ -36,14 +36,14 @@ def get_zone_data(sensor='ambient_noise', zone='all'):
     '''
     
     filepath = f'./data/raw/{sensor}/{zone}.csv'
+    
     try:
-        if os.path.isfile(filepath):
-            return pd.read_csv(filepath)
-    except:
-        raise FileNotFoundError(f"You're missing the {zone}.csv file.")
-    
-    
-def combine_data(sensor='ambient_noise'):
+        return pd.read_csv(filepath)
+    except FileNotFoundError:
+        return combine_data(sensor_type=sensor)
+
+ 
+def combine_data(sensor_type='ambient_noise'):
     '''
     For a specific sensor, combine the zones together into a file named 'all'
     Parameters
@@ -59,15 +59,13 @@ def combine_data(sensor='ambient_noise'):
         'weather'       : Weather sensor data
     '''
     
-    a = pd.read_csv(f'./data/raw/{sensor}/brooks.csv')
-    b = pd.read_csv(f'./data/raw/{sensor}/downtown.csv')
-    c = pd.read_csv(f'./data/raw/{sensor}/medical.csv')
+    a = pd.read_csv(f'./data/raw/{sensor_type}/brooks.csv')
+    b = pd.read_csv(f'./data/raw/{sensor_type}/downtown.csv')
+    c = pd.read_csv(f'./data/raw/{sensor_type}/medical.csv')
     
     merge_1 = pd.concat([a, b])
     merge_2 = pd.concat([merge_1, c])
     
-    merge_2.to_csv(f'./data/raw/{sensor}/all.csv', index=False)
+    merge_2.to_csv(f'./data/raw/{sensor_type}/all.csv', index=False)
     
     return merge_2
-    
-    
