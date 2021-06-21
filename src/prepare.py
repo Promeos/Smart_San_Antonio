@@ -30,7 +30,8 @@ def prep_data(data, filename='air'):
     filepath = f'./data/prepared/{filename}.csv'
     
     try:
-        data = pd.read_csv(filepath)
+        data = pd.read_csv(filepath, infer_datetime_format=True, parse_dates=True)
+        data['date'] = pd.to_datetime(data['date'])
     except:
         data = normalize_common_cols(data)
         
