@@ -24,7 +24,7 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
   - In each data dictionary, make it clear that -999 means that a sensor does not have a module to take measurement.
  
  - Create an Air Quality index using the sensor data and EPA standard formula for accurate reporting.
- - Define what AQI represents and the AQI affects stakeholders.
+ - Define what AQI represents and how the AQI affects stakeholders (Hospitals, Citizens, First Responders).
  - Create a Noise Sensor Indicator to notify local law enforcement/first responders. Integrate with street cameras?
  - Integrate weather data with CPS energy usage to determine if weather has a significant impact on peak hour power useage.
  - Add street cameras or LED motion sensors to turn off or dim when activity is not detected. (Safety concern)
