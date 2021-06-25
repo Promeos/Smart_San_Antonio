@@ -16,19 +16,18 @@ The goal of the program is to evaluate smart streetlights for their cost effecti
 - Flood levels sensing
 
 ## Business Goals
-- Determine which vendor (AT&T or ITRON) provides the most accurate and reliable data.
+- Determine which vendor (AT&T or ITRON) provides the most reliable data and has the lowest cost.
 - Recommendations
-  - Store vendor data separately: A folder for AT&T and ITRON for each Zone
-  - Air Quality data provided by each sensor do not share the same unit of measurement. Each sensor measures a pollutant differently.
-  - Use a new vendor for API or create one in house.
+  - Store Vendor data separately for each zone.
+  - Air Quality data provided by each sensor does not have the same unit of measurement. Data integrity fails.
+  - Find a new vendor to create an REST API for San Antonio's open datasets or create one. The existing one is terrible.
   - In each data dictionary, make it clear that -999 means that a sensor does not have a module to take measurement.
  
  - Create an Air Quality index using the sensor data and EPA standard formula for accurate reporting.
  - Define what AQI represents and how the AQI affects stakeholders (Hospitals, Citizens, First Responders).
  - Create a Noise Sensor Indicator to notify local law enforcement/first responders. Integrate with street cameras?
- - Integrate weather data with CPS energy usage to determine if weather has a significant impact on peak hour power useage.
- - Add street cameras or LED motion sensors to turn off or dim when activity is not detected. (Safety concern)
- - Explain why this data matters and how its insights can be use to improve quality of life for San Antonio in 4-5 sentences or $5 Dollar story.
+ - Add street cameras or LED motion sensors to turn off/dim when activity is not detected. 
+ - Explain why this data matters and how its insights can be used to improve quality of life of San Antonio in 4-5 sentences.
 
 https://www.sanantonio.gov/SmartSA/Projects
 
